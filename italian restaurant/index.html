@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Andy and Rob's Italian Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "icon" href =  
+    "https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" 
+        type = "image/x-icon">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar closed-->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light" >
+         <div id = "topSmallScreen center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                
+                
+            </button>
+            <!--<a class="navbar-brand text-big navbar-toggler center" href="index.html">
+                <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" width="30" height="30" class="d-inline-block align-top " alt="pizza">
+                A&R
+            </a>-->
+            
+        </div>
+        <!--comment out div to fix-->
+        <!--navbar-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <a class="navbar-brand text-big " href="index.html" >
+                <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" width="40" height="40" class="d-inline-block align-top " alt="pizza">
+                A & R's 
+            </a>
+
+
+            <ul class="navbar-nav mr-auto center-flex">
+                <li class="nav-item active">
+                    <a class="nav-link" href="pizzaMenu.html">Pizza |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pastaMenu.html">Pasta |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="desertMenu.html">Desert |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="drinkMenu.html">Drinks <span class="sr-only">(current)</span></a>
+                </li>
+                
+                
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0 text-big" onclick="openBox()" >Make Reservations</button>
+            </form>
+        </div>
+    </nav>
+    <!--carousel-->
+    <div class = "center-flex padding-top" height = "1000px" width = "1000px">
+        <div class="h-50 w-50">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+            
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.cnn.com/cnnnext/dam/assets/181018164648-08-nyc-pizza---johns-of-bleeker-street.jpg" class="d-block w-100" alt="Pizza">
+                        <div class="carousel-caption">
+                            <h3>PIZZA</h3>
+                            <p>Enjoy our World Class Pizza!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dpv87w1mllzh1.cloudfront.net/alitalia_discover/attachments/data/000/000/334/original/roma-how-to-carbonara-1920x1080.jpg?1519055920" class="d-block w-100" alt="Pasta" >
+                        <div class="carousel-caption">
+                            <h3>PASTA</h3>
+                            <p>View our Selection of Famous Pasta!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://ewscripps.brightspotcdn.com/dims4/default/0f0f731/2147483647/strip/true/crop/640x360+0+33/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.wcpo.com%2Fphoto%2F2018%2F10%2F02%2FWCPO_cannoli_restaurant_1538456842353_99195701_ver1.0_640_480.png" class="d-block w-100" alt="Drinks" >
+                        <div class="carousel-caption">
+                            <h3>DESERT</h3>
+                            <p>Try our Delicious Derserts!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.edenbeing.com/wp-content/uploads/2019/12/the-lanesborough-library-bar-dry-january-1-1920x1080-1024x576.jpg" class="d-block w-100" alt="Drinks" >
+                        <div class="carousel-caption">
+                            <h3>DRINKS</h3>
+                            <p>Chill out with a Beverage!</p>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </a>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class = "center padding-top" id="aboveStatsSection">
+            
+    </div>
+
+    <div class = "padding-top" id="statsSection">
+        <div>
+            <p class = "stat-text-title ">Hello</p>
+
+        </div>
+        
+        
+    
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

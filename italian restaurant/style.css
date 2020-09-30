@@ -1,0 +1,92 @@
+html { 
+    background-image: url("https://cdn.hipwallpaper.com/m/26/28/oFCSY3.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+body { 
+    background-image: url("backgroundBlurred.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+.carousel-caption{
+    color: white;
+    text-shadow: 2px 5px #000000;
+    font-size: 40px;
+}
+.stat-text-title{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+ul {
+    display: table;
+    margin: auto;
+    font-size: 40px;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    
+}
+.text-big {
+    font-size: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+#topSmallScreen{
+    width: 100%;
+}
+.space-aroud-top-flex{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.padding-top{
+    padding-top: 100px;
+}
+#aboveStatsSection{
+    background-color:rgba(255, 255, 255, 0);
+    height: 300px;
+    width: 80%;
+}
+#statsSection{
+    background-color:white;
+    height: 60%;
+    width: 100%;
+}
+#pizzaMenu{
+    background-color:white;
+    height: 300px;
+    width: 80%;
+}
+
+#navbarSupportedContent{
+    width: 80%;
+}
+
+
+
+
+.middle {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .middlepage2 {
+    background-color: #7efdecbd;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 1600px;
+    width: 1260px;
+  }

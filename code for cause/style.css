@@ -1,0 +1,190 @@
+/*classes*/
+/*bar on top/tool bar*/
+.flex-tool-Bar {
+    display: flex;
+    justify-content: center;
+    background-color: #42c3ff;
+  }
+  
+  .flex-tool-Bar > div {
+    background-color: #0275aade;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 450px;
+    height: 50px;
+  }
+  /*bars on the side*/
+  .flex-sidebar {
+    display: flex;
+    margin: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #7efdecbd;
+  }
+  .flex-sidebar > div {
+    background-color: #9ff8ec;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 400px;
+    width: 300px;
+  }
+  .sidebar {
+    float: right;
+  }
+  /*middle content*/
+  .flex-middle > div {
+    background-color: #7efdecbd;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 800px;
+    width: 1260px;
+  }
+  .middle {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .middlepage2 {
+    background-color: #7efdecbd;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 1600px;
+    width: 1260px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+  
+  .page2TextBackground{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0275aade;
+    width: 1100px;
+  }
+  
+  
+  /*general tags*/
+  
+  body{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  html { 
+    background: url(https://mcdn.wallpapersafari.com/medium/55/76/g5VKkC.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  
+  /*ids*/
+  /*boxes in sidebar*/
+  #top{
+      height: 360px;
+      width: 300px;
+      background-color: rgb(80, 124, 247);
+  
+  }
+  
+  #bottom{
+      background-color: rgb(80, 124, 247);
+      height: 360px;
+      width: 300px;
+  }
+  /*text ids*/
+  #loudText{
+    display: flex;
+    color: white;
+    text-shadow: 2px 5px #000000;
+    justify-content: center;
+  }
+  
+  #missionStatementTitleText{
+    display: flex;
+    color: white;
+    text-shadow: 2px 5px #000000;
+    justify-content: center;
+  }
+  
+  #missionStatementText{
+    display: flex;
+    color: white;
+    text-shadow: 2px 5px #000000;
+    justify-content: center;
+  }
+  
+  
+  #loudText:hover{
+    display: flex;
+    color: black;
+    text-shadow: 2px 5px #000000;
+    justify-content: center;
+  }
+  
+  #titleText{
+    display: flex;
+    color: white;
+    text-shadow: 2px 5px #000000;
+    justify-content: center;
+  }
+  
+  #titleText:hover{
+    display: flex;
+    color: rgb(209, 209, 209);
+    text-shadow: 2px 5px #000000;
+    justify-content: center;
+  }
+  
+  #sideText{
+    display: flex;
+    color: white;
+    text-shadow: 2px 2px #000000;
+  
+  }
+  
+  #topText{
+    display: flex;
+    color: white;
+    text-shadow: 2px 5px #000000;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  /*clickable text css*/
+  a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(209, 209, 209);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  
