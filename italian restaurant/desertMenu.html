@@ -25,7 +25,7 @@
 <body>
     <!--navbar closed-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light bg-light" >
-        <div id = "topSmallScreen">
+        <div id = "topSmallScreen center">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                
@@ -34,27 +34,27 @@
            <!--<a class="navbar-brand text-big navbar-toggler center" href="index.html">
                <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" width="30" height="30" class="d-inline-block align-top " alt="pizza">
                A&R
-           </a>
+           </a>-->
            
-       </div>-->
-
+       </div>
+       <!--comment out div to fix-->
        <!--navbar-->
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <a class="navbar-brand text-big " href="index.html">
-               <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" width="30" height="30" class="d-inline-block align-top " alt="pizza">
-               Andy and Rob's Italian Restaurant
+       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+           <a class="navbar-brand text-big " href="index.html" >
+               <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" width="40" height="40" class="d-inline-block align-top " alt="pizza">
+               A & R's 
            </a>
 
 
            <ul class="navbar-nav mr-auto center-flex">
                <li class="nav-item active">
-                   <a class="nav-link" href="pizzaMenu.html">Pizza | <span class="sr-only">(current)</span></a>
+                   <a class="nav-link" href="pizzaMenu.html">Pizza |<span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item active">
-                   <a class="nav-link" href="pastaMenu.html">Pasta | <span class="sr-only">(current)</span></a>
+                   <a class="nav-link" href="pastaMenu.html">Pasta |<span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item active">
-                   <a class="nav-link" href="desertMenu.html">Desert | <span class="sr-only">(current)</span></a>
+                   <a class="nav-link" href="desertMenu.html">Desert |<span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item active">
                    <a class="nav-link" href="drinkMenu.html">Drinks <span class="sr-only">(current)</span></a>
@@ -66,18 +66,6 @@
            <form class="form-inline my-2 my-lg-0">
            <button class="btn btn-outline-success my-2 my-sm-0 text-big" onclick="openBox()" >Make Reservations</button>
            </form>
-           <script>
-               function openBox() {
-               var email = prompt("Enter your name to get a reservation");
-               if(email == "" || !email.includes("@"))
-               {
-                   alert("No reservations avaliable");
-                   return;
-               }
-           emails.push(email);
-           alert("Thank you!");
-               }
-           </script>
        </div>
    </nav>
     
