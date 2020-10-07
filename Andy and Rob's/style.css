@@ -1,0 +1,595 @@
+/* most navbar code/animation by Albi https://codepen.io/albizan/pen/mMWdWZ*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    z-index: 100;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 2rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #d88212;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #d88212;
+}
+
+
+/* Home section */
+
+
+
+.navTrigger {
+    display: none;
+    z-index: 10;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+/* w-100{
+    min-width: 100%;
+} */
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+        
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    padding-top: 2rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 100;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+    
+
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+.z-100{
+    z-index: 100;
+}
+.invert {  
+    filter: invert(100%); 
+}
+
+
+
+
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 10000;
+}
+
+
+@media (max-height: 653px) {  
+    #reservations .padding-top{
+        padding-top: 0rem;
+    }
+}
+
+
+@media (min-width: 544px) {  
+    .title {
+        font-size:5rem;
+    } 
+}
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .title {
+        font-size:5rem;
+    } 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .title {
+        font-size:5rem;
+    } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .title {
+        font-size:5rem;
+    } 
+}
+.sub-text{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.733);
+}
+.no-padding{
+    margin: 0;
+    padding: 0;
+}
+.Main-picture{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(66, 68, 92, 0.74) 0%, rgba(92, 77, 66, 0.8) 100%), url("backgroundBlurred.png");
+    background-position: center top;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.main-divider{
+    border-color: #f4623a;
+    border-width: 3px;
+    width: 100%;
+    max-width: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+.box-sizing {
+    box-sizing:border-box;
+ }
+.btn{
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 300px;
+    color: white;
+}
+
+#reservations .btn{
+    color: #f4623a;
+}
+
+#reservations .btn:hover{
+    color: #881f02;
+}
+
+.btn-primary{
+    background-color: #f4623a;
+    border-color: #f4623a;
+}
+
+.btn-primary:hover{
+    background-color: #f74e1f;
+    border-color: #f54d1f;
+}
+
+#reservations .btn-primary{
+    background-color: #ffffff;
+    border-color: #adadad;
+}
+
+#reservations .btn-primary:hover{
+    background-color: #c4c4c4;
+    border-color: #d3d3d3;
+}
+
+  
+.btn-xl{
+    padding: 2rem 4rem;
+}
+.short{
+    max-height: 10rem;
+    height: 100%;
+    display: table-cell; 
+    vertical-align: bottom;
+}
+.text-style{
+    max-width: 60rem;
+    width: 100%;
+}
+.padding-bottom{
+    height: 20rem;
+    padding-bottom: 10rem;
+}
+.padding-top{
+    height: 20rem;
+    padding-top: 10rem;
+}
+.padding-top{
+    height: 20rem;
+    padding-top: 10rem;
+}
+#main-picture div.padding-top{
+    height: 20rem;
+    padding-top: 2rem ;
+}
+#reservations .padding-top{
+    height: 20rem;
+    padding-top: 5rem;
+}
+.large-hidden{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .small-hidden {
+        display: none;
+        
+    }
+    .large-hidden{
+        display: block;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .tiny-hidden {
+        display: none;
+        
+    }
+    .tiny-shown{
+        display: block;
+    }
+    
+}
+.hel{
+    max-width: 3rem;
+    width: 100%;
+}
+.reservations-title{
+    font-size: 35px;
+    font-weight: 5000;
+}
+hr .main-divider{
+    padding-bottom: 10rem;
+}
+hr .sub-divider{
+    padding-bottom: 10rem;
+    
+}
+.sub-divider{
+    border-color: white;
+    border-width: 3px;
+    width: 100%;
+    max-width: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+.page-section{
+    max-height: 3000px;
+    height: 100%;
+}
+#reservations div.container, .bg-orange{
+    background-color: #f4623a;
+}
+.bg-orange{
+    max-width: 1000rem;
+    max-height: 1000rem;
+    height: 100%;
+    width: 100%;
+}
+
+#nav li .active{
+    background-color: red;
+}
+#Statistics .title{
+    font-size: 2.5rem;
+    font-weight: 10000;
+}
+.icon-text{
+    font-size: 1.5rem;
+    font-weight: 10000;
+}
+.icon-color {
+    color: #f4623a !important;
+  }
+#Statistics .padding-bottom{
+    padding-bottom: 1rem;
+}
+#Statistics section div{
+    max-width: 20rem;
+    overflow: hidden;
+    margin:0;
+    width:50%;
+  }
+svg {
+overflow: hidden;
+vertical-align: middle;
+}
+

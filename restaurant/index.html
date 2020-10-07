@@ -1,0 +1,249 @@
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Andy and Rob's Italian Restaurant</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        
+    </head>
+    <body id = "page-top">
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Your Logo</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">Andy and Rob's Italian Restaurant</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">The finest Italian food in Miami! Wether it's world class pizza, delicously cheesy pasta, tasty desserts, or house brewed drinks, we dont dissapoint</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Get Your Reservation</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section class="page-section bg-primary" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Make your reservations today!</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-white-75 mb-4">Due to high demand, reservations may not be available in your life time, bidding for reservations will be held starting at $2000 just for entry.</p>
+                        <a class="btn btn-light btn-xl js-scroll-trigger" onclick="openBox()" >Get Started!</a>
+                        <script>
+                            function openBox() {
+                            var email = prompt("Enter your name to get a reservation");
+                            if(email == "" || !email.includes("@"))
+                            {
+                                alert("No reservations avaliable");
+                                return;
+                            }
+                            emails.push(email);
+                            alert("Thank you!");
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <h2 class="text-center mt-0">At Your Service</h2>
+                <hr class="divider my-4" />
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-pizza-slice fa-4x text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">10,000</h3>
+                            <p class="text-muted mb-0">Number of pizza's eaten every month!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-utensils fa-4x text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">2,300</h3>
+                            <p class="text-muted mb-0">Pounds of Pasta eaten every month.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-wine-glass-alt fa-4x text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">260</h3>
+                            <p class="text-muted mb-0">Possible drink combinations at our famous bar!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <i class="fas fa-guitar fa-4x text-primary mb-4"></i>
+                            <h3 class="h4 mb-2">Live Music</h3>
+                            <p class="text-muted mb-0">Live entertainment all day, everyday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://cdn.cnn.com/cnnnext/dam/assets/181018164648-08-nyc-pizza---johns-of-bleeker-street.jpg">
+                            <img class="img-fluid" src="https://cdn.cnn.com/cnnnext/dam/assets/181018164648-08-nyc-pizza---johns-of-bleeker-street.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-75">Pizza</div>
+                                <div class="project-name">Pepperoni</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://dpv87w1mllzh1.cloudfront.net/alitalia_discover/attachments/data/000/000/334/original/roma-how-to-carbonara-1920x1080.jpg?1519055920">
+                            <img class="img-fluid" src="https://dpv87w1mllzh1.cloudfront.net/alitalia_discover/attachments/data/000/000/334/original/roma-how-to-carbonara-1920x1080.jpg?1519055920" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-75">Pasta</div>
+                                <div class="project-name">Chicken Pasta</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://ewscripps.brightspotcdn.com/dims4/default/0f0f731/2147483647/strip/true/crop/640x360+0+33/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.wcpo.com%2Fphoto%2F2018%2F10%2F02%2FWCPO_cannoli_restaurant_1538456842353_99195701_ver1.0_640_480.png">
+                            <img class="img-fluid" src="https://ewscripps.brightspotcdn.com/dims4/default/0f0f731/2147483647/strip/true/crop/640x360+0+33/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.wcpo.com%2Fphoto%2F2018%2F10%2F02%2FWCPO_cannoli_restaurant_1538456842353_99195701_ver1.0_640_480.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-75">Dessert</div>
+                                <div class="project-name">Canoli</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://www.edenbeing.com/wp-content/uploads/2019/12/the-lanesborough-library-bar-dry-january-1-1920x1080-1024x576.jpg">
+                            <img class="img-fluid" src="https://www.edenbeing.com/wp-content/uploads/2019/12/the-lanesborough-library-bar-dry-january-1-1920x1080-1024x576.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-75">Drinks</div>
+                                <div class="project-name">Wine</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://blog.giallozafferano.it/tradizioneincucina/wp-content/uploads/2019/03/Screenshot_20190226-222748_Video-Player.jpg">
+                            <img class="img-fluid" src="https://blog.giallozafferano.it/tradizioneincucina/wp-content/uploads/2019/03/Screenshot_20190226-222748_Video-Player.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-75">Dessert</div>
+                                <div class="project-name">Zeppole</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="https://cookdiary.net/wp-content/uploads/images/Vegetarian-Pizza.jpg">
+                            <img class="img-fluid" src="https://cookdiary.net/wp-content/uploads/images/Vegetarian-Pizza.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-75">Pizza</div>
+                                <div class="project-name">Vegan</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to action-->
+        <div id = "chefs">
+            <section class="page-section bg-dark text-white">
+                <div class="container text-center">
+                    <div>
+                        <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" class="rounded-circle" width="150" height="150" alt="Head Chefs">
+                        <h2 class="mb-4">Andy!</h2>
+                    </div>
+                    <div>
+                        <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" class="rounded-circle" width="150" height="150" alt="Head Chefs">
+                        <h2 class="mb-4">Rob!</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">Here is our contact information if you have questions or what to sqedule a reservation over the phone!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+1 (305) 283-3456</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        <a class="d-block" href="andyandrobs@gmail.com">andyandrobs@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
+        <link href="style.css" rel="stylesheet" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+
+    </body>
+
+
+
+</html>

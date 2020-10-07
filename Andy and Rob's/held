@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Andy and Rob's Italian Restaurant</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- Third party plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body id = "page-top">
+        <nav class="nav">
+            <div class="container">
+                <span id = "navTrigger" class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    
+                </span>
+                <div class = "logo">
+                    <a href="index.html"><img class = "invert" src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" width="40" height="40"  alt="pizza">
+                        A & R's</a>
+                </div>
+                <div id="mainListDiv" class="main_list ">
+                    <ul class="navlinks ">
+                        <li><a href = "menu.html">Menu</a></li>
+                        <li><a href = "#Statistics">Statistics</a></li>
+                        <li><a href = "#Images">Images</a></li>
+                        <li><a href = "#chefs">Chefs</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+        
+        <section class="Main-picture ">
+            <div class="container-fluid h-100 " >
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-lg-6 text-center w-100" style="width: 7rem">
+                        <header class = "text-center col-12 " >
+                            <h1 class = "text-uppercase text-white title padding-bottom">Andy and Rob's Italian Restaurant</h1>
+                        </header>
+                        <div class="buffer"></div>
+                        <section class = "text-center col-12">
+                            <h1 class = "text-uppercase sub-text small-hidden">The finest Italian food in Miami! Wether it's world class pizza, delicously cheesy pasta, tasty desserts, or house brewed drinks, we dont dissapoint</h1>
+                            <h1 class = "text-uppercase sub-text large-hidden">The finest Italian food in Miami!</h1>
+                            <hr class = "main-divider">
+                            <a href="#reservations" class="btn btn-primary btn-xl" role="button">Make Reservations</a>
+                            
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+            
+        </section>
+        
+        <!-- reservations-->
+        <section class="bg-orange" id="reservations">
+            <div class="container-fluid" style="height: 70rem">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-lg-6  text-center w-100">
+                        <header class = "text-center col-12 " >
+                            <h1 class = "text-uppercase text-white title padding-bottom">Make your reservations today!</h1>
+                        </header>
+                        <div class="buffer"></div>
+                        <section class = "text-center col-12">
+                            <h1 class = "sub-text ">Due to high demand, reservations may not be available in your life time, bidding for reservations will be held starting at $2000 just for entry.</h1>
+                            <hr class = "sub-divider">
+                            <a href="#reservations" class="btn btn-primary btn-xl" onclick="openBox()" role="button">Make Reservations</a>
+                            <script>
+                                function openBox() {
+                                var email = prompt("Enter your name to get a reservation");
+                                if(email == "" || !email.includes("@"))
+                                {
+                                    alert("No reservations avaliable");
+                                    return;
+                                }
+                                emails.push(email);
+                                alert("Thank you!");
+                                }
+                            </script>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <div id = "chefs">
+            <section class="bg-dark text-white">
+                <div class="container text-center">
+                    <div>
+                        <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" class="rounded-circle" width="150" height="150" alt="Head Chefs">
+                        <h2 class="mb-4">Andy!</h2>
+                    </div>
+                    <div>
+                        <img src="https://www.shareicon.net/data/512x512/2016/06/17/595605_pizza_512x512.png" class="rounded-circle" width="150" height="150" alt="Head Chefs">
+                        <h2 class="mb-4">Rob!</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    $('.navTrigger').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                    $('.navTrigger').removeClass('affix');
+                }
+                
+            });
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
